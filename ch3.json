@@ -1,0 +1,9 @@
+{
+  "outdir": "./output",
+  "clientID": "",
+  "mapping": { "it": "2.112.0.1" },
+  "all": false,
+  "regionalize": true,
+  "includeChannels": ["6994800c470389f33df8e090"],
+  "randomClientid": true
+}
