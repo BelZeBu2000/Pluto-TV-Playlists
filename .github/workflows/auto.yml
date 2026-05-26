@@ -23,13 +23,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Avvia Script Pluto Nativo
-        run: node index.js
+      - name: Forza Generazione M3U8 e Avvia Script
+        run: |
+          # Modifica temporanea per forzare lo scraper a generare il file .m3u8 dell'Italia
+          sed -i 's/"mapping": {/"mapping": {"it": "2.112.0.1",/g' config.json
+          node index.js
 
       - name: Salvataggio file su GitHub
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add output/
-          git commit -m "Aggiornati 18 canali italiani ed EPG nativi" || echo "No changes"
+          git commit -m "Forzato il rilascio di plutotv_it.m3u8 ed EPG" || echo "No changes"
           git push --force origin main
