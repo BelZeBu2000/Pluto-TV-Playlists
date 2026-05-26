@@ -1,6 +1,6 @@
 {
   "outdir": "./output",
-  "clientID": "9a144e80-ed74-46da-b57c-da3432241adc",
+  "clientID": "",
   "mapping": {
     "us": "45.50.96.71",
     "uk": "51.89.255.67",
@@ -16,7 +16,7 @@
   "excludeGroups": false,
   "excludeChannels": false,
   "uniqueClientid": false,
-  "randomClientid": false,
+  "randomClientid": true,
   "refresh": 0,
   "xTvgUrl": false,
   "ondemand": false,
