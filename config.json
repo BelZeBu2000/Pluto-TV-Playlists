@@ -10,9 +10,9 @@
     "es": "82.98.134.10",
     "it": "2.112.0.1"
   },
-  "all": true,
+  "all": false,
   "group": "genre",
-  "regionalize": true,
+  "regionalize": false,
   "excludeGroups": false,
   "excludeChannels": false,
   "uniqueClientid": false,
