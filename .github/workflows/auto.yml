@@ -24,10 +24,16 @@ jobs:
       - name: Run scraper
         run: node index.js
 
+      - name: Compress EPG to GZ
+        run: |
+          if [ -f output/plutotv_it.xml ]; then
+            gzip -c output/plutotv_it.xml > output/plutotv_it.xml.gz
+          fi
+
       - name: Commit files
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Auto update playlist" || echo "No changes"
+          git commit -m "Auto update playlist and compressed EPG" || echo "No changes"
           git push --force
