@@ -24,39 +24,117 @@ jobs:
       - name: Genera Canale 1 (Pluto TV Film)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa17fb9f4490007e6419a"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale1.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale1.m3u8 && mv output/plutotv_it.xml output/canale1.xml
 
       - name: Genera Canale 2 (Pluto TV Film Azione)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa20a2e7f270007c4878d"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale2.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale2.m3u8 && mv output/plutotv_it.xml output/canale2.xml
 
       - name: Genera Canale 3 (Pluto TV Azione Cult)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["6994800c470389f33df8e090"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale3.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale3.m3u8 && mv output/plutotv_it.xml output/canale3.xml
 
       - name: Genera Canale 4 (Pluto TV Horror)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["61c09e3ac210ed0007606620"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale4.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale4.m3u8 && mv output/plutotv_it.xml output/canale4.xml
 
       - name: Genera Canale 5 (Pluto TV Film Thriller)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa5e995132a00075f7005"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale5.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale5.m3u8 && mv output/plutotv_it.xml output/canale5.xml
 
       - name: Genera Canale 6 (Pluto TV Legami Letali)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["64808a8c536e0c0008a276d1"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale6.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale6.m3u8 && mv output/plutotv_it.xml output/canale6.xml
 
       - name: Genera Canale 7 (Pluto TV Film Romantici)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa4a4cc92820007b663af"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json && mv output/plutotv_it.m3u8 output/canale7.m3u8
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale7.m3u8 && mv output/plutotv_it.xml output/canale7.xml
 
       - name: Genera Canale 8 (Pluto TV Film Commedia)
         run: |
           echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa512d67fd900072323db"],"randomClientid":true}' > tmp.json
-          node index.js --config tmp.json &&
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale8.m3u8 && mv output/plutotv_it.xml output/canale8.xml
+
+      - name: Genera Canale 9 (Pluto TV Christmas tutto l'anno)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["612e05b885183d0007958101"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale9.m3u8 && mv output/plutotv_it.xml output/canale9.xml
+
+      - name: Genera Canale 10 (Pluto TV Western)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["62e7fb67478a5b0007e6c50c"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale10.m3u8 && mv output/plutotv_it.xml output/canale10.xml
+
+      - name: Genera Canale 11 (Pluto TV Totò)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["65253f9881f942000833ccd5"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale11.m3u8 && mv output/plutotv_it.xml output/canale11.xml
+
+      - name: Genera Canale 12 (Pluto TV Alberto Sordi)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["661f8f01801af800083d9d81"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale12.m3u8 && mv output/plutotv_it.xml output/canale12.xml
+
+      - name: Genera Canale 13 (Pluto TV Cinema Italiano)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["608aa7d8359b270007861489"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale13.m3u8 && mv output/plutotv_it.xml output/canale13.xml
+
+      - name: Genera Canale 14 (Pluto TV Dive Italiane)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["6875080e3484d607323641f8"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale14.m3u8 && mv output/plutotv_it.xml output/canale14.xml
+
+      - name: Genera Canale 15 (Cinema Poliziottesco)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["671754d8e482950008962aaf"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale15.m3u8 && mv output/plutotv_it.xml output/canale15.xml
+
+      - name: Genera Canale 16 (Pluto TV Eros)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["66335489307fa300082bd6e4"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale16.m3u8 && mv output/plutotv_it.xml output/canale16.xml
+
+      - name: Genera Canale 17 (Pluto TV Cinema Orientale)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["6786235bd648bf0008c2780a"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale17.m3u8 && mv output/plutotv_it.xml output/canale17.xml
+
+      - name: Genera Canale 18 (Pluto TV Film Storici)
+        run: |
+          echo '{"outdir":"./output","clientID":"","mapping":{"it":"2.112.0.1"},"all":false,"regionalize":true,"includeChannels":["68750875759366af05a151ce"],"randomClientid":true}' > tmp.json
+          node index.js --config tmp.json
+          mv output/plutotv_it.m3u8 output/canale18.m3u8 && mv output/plutotv_it.xml output/canale18.xml
+
+      - name: Commit dei file generati
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          rm -f tmp.json
+          git add output/canale*.m3u8 output/canale*.xml
+          git commit -m "Generati 18 canali con rispettive guide EPG XML" || echo "No changes"
+          git pull --rebase origin main
+          git push origin main
