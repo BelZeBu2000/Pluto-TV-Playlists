@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -143,6 +145,5 @@ jobs:
           rm -f tmp.json
           rm -f output/plutotv_it.*
           git add output/canale*.m3u8 output/epg.xml || echo "Niente da aggiungere"
-          git commit -m "Generazione 18 flussi indipendenti ed EPG globale completata" || echo "No changes"
-          git pull --rebase origin main
-          git push origin main
+          git commit -m "Generazione conclusa" || echo "No changes"
+          git push --force origin main
